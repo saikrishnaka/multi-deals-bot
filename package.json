@@ -1,0 +1,14 @@
+{
+  "name": "multi-deals-bot",
+  "version": "1.0.0",
+  "description": "Telegram multi-platform deals poster",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.0"
+  }
+}
