@@ -1,0 +1,12 @@
+[
+  {
+    "id": "flip_example_1",
+    "platform": "flipkart",
+    "type": "manual",
+    "title": "Sample Flipkart Deal",
+    "url": "https://fkrt.co/6joBSt",
+    "image": "",
+    "tags": ["flipkart"],
+    "cooldown_minutes": 60
+  }
+]
