@@ -2,7 +2,6 @@
   "name": "multi-deals-bot",
   "version": "1.0.0",
   "description": "Telegram multi-platform deals poster",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
