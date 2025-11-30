@@ -116,4 +116,9 @@ async function main() {
   setInterval(processSources, INTERVAL_MINUTES * 60 * 1000);
 }
 
-main();
+main();function startBot() {
+  bot.launch();
+  console.log('Bot launched');
+}
+
+export default startBot;
