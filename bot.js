@@ -78,9 +78,13 @@ async function postToTelegram(text, image) {
 }
 
 function formatMessage(item, scraped) {
-  let msg = `<b>${short(scraped.title || item.title)}</b>\n`;
-  if (scraped.price) msg += `<b>Price:</b> ${scraped.price}\n`;
-  msg += `\n${item.url}\n`;
+  let msg = `<b>${short(scraped.title || item.title)}</b>
+`;
+  if (scraped.price) msg += `<b>Price:</b> ${scraped.price}
+`;
+  msg += `
+${item.url}
+`;
   return msg;
 }
 
@@ -96,7 +100,9 @@ async function processSources() {
     if (Date.now() - last < cooldown) continue;
 
     if (item.type === "manual") {
-      const msg = `<b>${item.title}</b>\n\n${item.url}`;
+      const msg = `<b>${item.title}</b>
+
+${item.url}`;
       await postToTelegram(msg, item.image);
       lastPosted[item.id] = Date.now();
       continue;
@@ -111,14 +117,9 @@ async function processSources() {
   }
 }
 
-async function main() {
+async function startBot() {
   await processSources();
   setInterval(processSources, INTERVAL_MINUTES * 60 * 1000);
 }
 
-main();function startBot() {
-  bot.launch();
-  console.log('Bot launched');
-}
-
-export default startBot;
+module.exports = startBot;
