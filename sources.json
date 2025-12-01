@@ -1,12 +1,22 @@
 [
   {
-    "id": "flip_example_1",
+    "id": "flip_watch_1",
     "platform": "flipkart",
     "type": "manual",
-    "title": "Sample Flipkart Deal",
-    "url": "https://fkrt.co/6joBSt",
+    "title": "Boat Watch Deal",
+    "url": "https://fkrt.co/mee_link1",
     "image": "",
     "tags": ["flipkart"],
     "cooldown_minutes": 60
+  },
+  {
+    "id": "flip_earbuds_1",
+    "platform": "flipkart",
+    "type": "manual",
+    "title": "Earbuds Mega Sale",
+    "url": "https://fkrt.co/mee_link2",
+    "image": "",
+    "tags": ["flipkart"],
+    "cooldown_minutes": 120
   }
 ]
